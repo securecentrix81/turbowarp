@@ -19,9 +19,6 @@ for path in glob.glob('scratch-gui/build/**/*.js', recursive=True):
   with open(path, 'w') as f:
     f.write(contents)
 
-os.remove('scratch-gui/build/sw.js')
-os.remove('scratch-gui/build/manifest.webmanifest')
-
 shutil.copy('scratch-gui/build/fullscreen.html', 'scratch-gui/build/index.html')
 shutil.copy('scratch-gui/build/editor.html', 'scratch-gui/build/editor')
 shutil.copy('scratch-gui/build/fullscreen.html', 'scratch-gui/build/fullscreen')
