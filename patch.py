@@ -21,8 +21,8 @@ for path in glob.glob('scratch-gui/build/**/*.js', recursive=True):
 
 os.remove('scratch-gui/build/sw.js')
 os.remove('scratch-gui/build/manifest.webmanifest')
-os.remove('scratch-gui/build/fullscreen.html')
-os.remove('scratch-gui/build/index.html')
+#os.remove('scratch-gui/build/fullscreen.html') idk how this works how do i fullscreen
+#os.remove('scratch-gui/build/index.html')
 
 shutil.copy('scratch-gui/build/editor.html', 'scratch-gui/build/index.html')
 shutil.copy('robots.txt', 'scratch-gui/build/robots.txt')
