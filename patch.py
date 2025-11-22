@@ -23,4 +23,6 @@ os.remove('scratch-gui/build/sw.js')
 os.remove('scratch-gui/build/manifest.webmanifest')
 
 shutil.copy('scratch-gui/build/fullscreen.html', 'scratch-gui/build/index.html')
+shutil.copy('scratch-gui/build/editor.html', 'scratch-gui/build/editor')
+shutil.copy('scratch-gui/build/fullscreen.html', 'scratch-gui/build/fullscreen')
 shutil.copy('robots.txt', 'scratch-gui/build/robots.txt')
